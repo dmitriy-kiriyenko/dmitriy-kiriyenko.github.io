@@ -19,7 +19,14 @@
 		{% endif %}
 
 		{% include socials.html %}
-		<p class="header__tagline">{% t site.data.settings.basic_settings.site_tagline %}</p>
+		<p class="header__tagline">
+			{% t site.data.settings.basic_settings.site_tagline %}
+			{% if site.lang == "en" %}
+				<a href="{{ site.baseurl_root }}/ru{{ page.url}}">({% t global.russian %})</a>
+			{% elsif site.lang == "ru" %}
+				<a href="{{ site.baseurl_root }}{{ page.url}}">({% t global.english %})</a>
+			{% endif %}
+		</p>
 
 		<div class="menu">
 			<ul class="menu__list">
