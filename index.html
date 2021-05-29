@@ -27,12 +27,12 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="site.title – Dmitriy Kiriyenko">
 	<meta name="twitter:description" content="Ideas, thoughts, stories">
-	<meta name="twitter:image:src" content="https://kiriyenko.me/images/social.jpg">
+	<meta name="twitter:image:src" content="https://www.kiriyenko.me/images/social.jpg">
 
 	<!-- Facebook OpenGraph -->
 	<meta property="og:title" content="site.title – Dmitriy Kiriyenko" />
 	<meta property="og:description" content="Ideas, thoughts, stories" />
-	<meta property="og:image" content="https://kiriyenko.me/images/social.jpg" />
+	<meta property="og:image" content="https://www.kiriyenko.me/images/social.jpg" />
 
 	
 	<!-- Font Embed Code -->
@@ -66,7 +66,7 @@
 </head>
 
 
-<body class="loading ajax-loading" data-site-url="https://kiriyenko.me" data-page-url="/">
+<body class="loading ajax-loading" data-site-url="https://www.kiriyenko.me" data-page-url="/">
 
 
 	<header class="header">
@@ -80,7 +80,7 @@
 		
 
 		
-		<a href="/" class="header__title">
+		<a href="/" class="header__title js-no-ajax">
 			Dmitriy Kiriyenko
 		</a>
 		
@@ -161,7 +161,7 @@
 		<p class="header__tagline">
 			Thoughts, ideas and stories
 			
-				<a href="/ru/">(по русски)</a>
+				<a href="/ru/" class="js-no-ajax">(по русски)</a>
 			
 		</p>
 
@@ -169,11 +169,11 @@
 			<ul class="menu__list">
 				
 				<li class="menu__list__item">
-					<a href="/" class="menu__list__item__link">Latest</a>
+					<a href="/" class="menu__list__item__link js-no-ajax">Latest</a>
 				</li>
 				
 				<li class="menu__list__item">
-					<a href="/about" class="menu__list__item__link">About</a>
+					<a href="/about" class="menu__list__item__link js-no-ajax">About</a>
 				</li>
 				
 			</ul>
@@ -203,17 +203,17 @@
 		<article class="listing-post">
 
 			<div class="listing-post__header">
-				<h2 class="listing-post__title"><a href="/blog/demo-post">Demo post</a></h2>
+				<h2 class="listing-post__title"><a class="js-no-ajax" href="/blog/demo-post">Demo post</a></h2>
 				<p class="listing-post__subtitle">29 May 2021</p>
 			</div>
 
 			
-			<a href="/blog/demo-post" class="listing-post__image" style="background-image: url(/images/demo/demo-square.jpg);"></a>
+			<a href="/blog/demo-post" class="listing-post__image js-no-ajax" style="background-image: url(/images/demo/demo-square.jpg);"></a>
 			
 
 			<div class="listing-post__content">
 				<p>There will be a post here tomorrow, I swear</p>
-				<p><a href="/blog/demo-post" class="button">Read More</a>
+				<p><a href="/blog/demo-post" class="button js-no-ajax">Read More</a>
 			</div>
 
 		</article>
