@@ -14,17 +14,17 @@ featured_image: /images/social.jpg
 		<article class="listing-post">
 
 			<div class="listing-post__header">
-				<h2 class="listing-post__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+				<h2 class="listing-post__title"><a class="js-no-ajax" href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
 				<p class="listing-post__subtitle">{{ post.date | date_to_long_string }}</p>
 			</div>
 
 			{% if post.featured_image %}
-			<a href="{{ post.url | relative_url }}" class="listing-post__image" style="background-image: url({{ post.featured_image | prepend: site.baseurl_root }});"></a>
+			<a href="{{ post.url | relative_url }}" class="listing-post__image js-no-ajax" style="background-image: url({{ post.featured_image | prepend: site.baseurl_root }});"></a>
 			{% endif %}
 
 			<div class="listing-post__content">
 				<p>{{ post.excerpt }}</p>
-				<p><a href="{{ post.url | relative_url }}" class="button">{% t buttons.more %}</a>
+				<p><a href="{{ post.url | relative_url }}" class="button js-no-ajax">{% t buttons.more %}</a>
 			</div>
 
 		</article>
@@ -41,12 +41,12 @@ featured_image: /images/social.jpg
 
 	{% if paginator.previous_page %}
 	<div class="pagination__prev">
-		<a href="{{ paginator.previous_page_path | relative_url }}" class="button button--large"><i class="fa fa-angle-left" aria-hidden="true"></i> <span>{% t buttons.previous %}</span></a>
+		<a href="{{ paginator.previous_page_path | relative_url }}" class="button button--large js-no-ajax"><i class="fa fa-angle-left" aria-hidden="true"></i> <span>{% t buttons.previous %}</span></a>
 	</div>
 	{% endif %}
 	{% if paginator.next_page %}
 	<div class="pagination__next">
-		<a href="{{ paginator.next_page_path | relative_url }}" class="button button--large"><span>{% t buttons.next %}</span> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+		<a href="{{ paginator.next_page_path | relative_url }}" class="button button--large js-no-ajax"><span>{% t buttons.next %}</span> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
 	</div>
 	{% endif %}
 
