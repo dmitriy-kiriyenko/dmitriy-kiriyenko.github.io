@@ -1,0 +1,16 @@
+global:
+  russian: Русский
+  english: English
+site:
+  title: Dmitriy Kiriyenko
+  tagline: Thoughts, ideas and stories
+menu:
+  blog: Latest
+  about: About
+about:
+  title: About me
+  subtitle: What do I do
+buttons:
+  more: Read More
+  next: Newer Posts
+  previous: Older Posts

@@ -1,0 +1,16 @@
+global:
+  russian: Русский
+  english: English
+site:
+  title: Дмитрий Кириенко
+  tagline: Мысли, идеи, рассказы
+menu:
+  blog: Блог
+  about: Обо мне
+about:
+  title: Обо мне
+  subtitle: Чем я занят?
+buttons:
+  more: Читать полностью
+  next: Посты поновее
+  previous: Посты постарше
