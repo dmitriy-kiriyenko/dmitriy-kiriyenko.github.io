@@ -5,4 +5,4 @@ subtitle: about.subtitle
 featured_image: /images/social.jpg
 ---
 
-{% translate_file about.md %}
+{% tf about.md %}
